@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace RgbConverter.Tests
@@ -21,7 +21,7 @@ namespace RgbConverter.Tests
         [TestCaseSource(nameof(TestCaseData))]
         public void GetHexRepresentationTests(int red, int green, int blue, string expected, string message)
         {
-            Assert.AreEqual(expected,Rgb.GetHexRepresentation(red, green, blue), message);
+            Assert.AreEqual(expected, Rgb.GetHexRepresentation(red, green, blue), message);
         }
     }
 }
